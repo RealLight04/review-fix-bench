@@ -1,0 +1,12 @@
+<!-- 관심종목 페이지 — 제거됨 -->
+<div class="watchlist">
+  <h1>관심 종목</h1>
+  <table id="watchlist-table"></table>
+</div>
+<script>
+async function loadQuotes(tickers) {
+  const res = await fetch(`/api/quote?tickers=${tickers.join(',')}`);
+  return res.json();
+}
+loadQuotes(['AMD', 'NVDA']).then(render);
+</script>
