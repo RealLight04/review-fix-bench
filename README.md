@@ -9,11 +9,15 @@ known correct fix. They exist to test two things review-fix's README claims but 
 2. **Fixing.** At a given model tier, does the fix land and stay inside the finding's scope? `verify.py`
    checks both halves: did the intended change happen, and did anything else change.
 
-It does **not** measure token cost, neither the grading overhead nor the savings from cheaper fix models.
-Read those off `/cost` or your usage page for each run and write them into your results. The runner does not
-collect them.
+It does **not** measure token cost properly, neither the grading overhead nor the savings from cheaper fix
+models. Read those off `/cost` or your usage page for each run and write them into your results. The runner
+does not collect them.
 
-No results are published yet.
+A first measurement (81 fixing runs and 81 grading runs) is in [results/RESULTS.md](results/RESULTS.md), with
+the per-run data in [results/raw.json](results/raw.json). In short: every mechanical and ordinary fix passed
+except two Sonnet runs that left a file undeleted (the harness denied the delete in one, and the other reported success anyway), Haiku failed the one high-risk case
+that every grader sent to Opus, and graders matched the expected tier in 58 of 81 runs. Thirteen of the 23
+misses rated a high-risk case Ordinary.
 
 ## Why this is a separate repository
 

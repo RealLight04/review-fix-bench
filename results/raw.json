@@ -1,0 +1,812 @@
+[
+ {
+  "case": "mech-03-typo-constant",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32564,
+  "grade": "Mechanical",
+  "grade_tokens": 31866
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "haiku",
+  "run": 3,
+  "pass": false,
+  "verifier_fail": "FAIL: persisted alerted=True even though sending raised",
+  "fix_tokens": 34580,
+  "grade": "High-risk",
+  "grade_tokens": 32150
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32641,
+  "grade": "Mechanical",
+  "grade_tokens": 32545
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40479,
+  "grade": "Ordinary",
+  "grade_tokens": 39692
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 35266,
+  "grade": "High-risk",
+  "grade_tokens": 32292
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41042,
+  "grade": "Ordinary",
+  "grade_tokens": 39737
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40744,
+  "grade": "Mechanical",
+  "grade_tokens": 40225
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40068,
+  "grade": "Mechanical",
+  "grade_tokens": 39401
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42191,
+  "grade": "High-risk",
+  "grade_tokens": 40486
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 34401,
+  "grade": "Ordinary",
+  "grade_tokens": 32096
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40362,
+  "grade": "Mechanical",
+  "grade_tokens": 39376
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40396,
+  "grade": "Mechanical",
+  "grade_tokens": 39372
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 36054,
+  "grade": "High-risk",
+  "grade_tokens": 32053
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40465,
+  "grade": "Ordinary",
+  "grade_tokens": 39710
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41699,
+  "grade": "Ordinary",
+  "grade_tokens": 39737
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 34008,
+  "grade": "Ordinary",
+  "grade_tokens": 32263
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42500,
+  "grade": "High-risk",
+  "grade_tokens": 40396
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40730,
+  "grade": "Ordinary",
+  "grade_tokens": 39681
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41428,
+  "grade": "Ordinary",
+  "grade_tokens": 39557
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40699,
+  "grade": "Mechanical",
+  "grade_tokens": 40157
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "haiku",
+  "run": 1,
+  "pass": false,
+  "verifier_fail": "FAIL: the same alert went out 2 times after a failed commit",
+  "fix_tokens": 34831,
+  "grade": "High-risk",
+  "grade_tokens": 32413
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 35040,
+  "grade": "Ordinary",
+  "grade_tokens": 32258
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40999,
+  "grade": "Mechanical",
+  "grade_tokens": 40348
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41280,
+  "grade": "Ordinary",
+  "grade_tokens": 39594
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32604,
+  "grade": "Mechanical",
+  "grade_tokens": 32185
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "sonnet",
+  "run": 2,
+  "pass": false,
+  "verifier_fail": "FAIL: app/alerts.py: added top-level `def:_rollback` that the finding did not ask for",
+  "fix_tokens": 42037,
+  "grade": "High-risk",
+  "grade_tokens": 39546
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40061,
+  "grade": "Mechanical",
+  "grade_tokens": 39380
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41689,
+  "grade": "Ordinary",
+  "grade_tokens": 41117
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32751,
+  "grade": "Mechanical",
+  "grade_tokens": 31982
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42816,
+  "grade": "High-risk",
+  "grade_tokens": 40338
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32858,
+  "grade": "Ordinary",
+  "grade_tokens": 33107
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42762,
+  "grade": "High-risk",
+  "grade_tokens": 40551
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 33081,
+  "grade": "Mechanical",
+  "grade_tokens": 31747
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32656,
+  "grade": "Mechanical",
+  "grade_tokens": 32012
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42006,
+  "grade": "High-risk",
+  "grade_tokens": 40719
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41126,
+  "grade": "Ordinary",
+  "grade_tokens": 40548
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40863,
+  "grade": "Mechanical",
+  "grade_tokens": 40195
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42379,
+  "grade": "High-risk",
+  "grade_tokens": 40424
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40747,
+  "grade": "Ordinary",
+  "grade_tokens": 39866
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41224,
+  "grade": "High-risk",
+  "grade_tokens": 39921
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 33357,
+  "grade": "Ordinary",
+  "grade_tokens": 41988
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 34554,
+  "grade": "High-risk",
+  "grade_tokens": 42403
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41572,
+  "grade": "Ordinary",
+  "grade_tokens": 52174
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40265,
+  "grade": "Mechanical",
+  "grade_tokens": 51592
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 35668,
+  "grade": "Ordinary",
+  "grade_tokens": 32186
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41034,
+  "grade": "Ordinary",
+  "grade_tokens": 52713
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 44304,
+  "grade": "Ordinary",
+  "grade_tokens": 52185
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41720,
+  "grade": "High-risk",
+  "grade_tokens": 53149
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40795,
+  "grade": "Mechanical",
+  "grade_tokens": 52351
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40304,
+  "grade": "Ordinary",
+  "grade_tokens": 51684
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32211,
+  "grade": "Mechanical",
+  "grade_tokens": 40519
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40813,
+  "grade": "Mechanical",
+  "grade_tokens": 52388
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 33962,
+  "grade": "Ordinary",
+  "grade_tokens": 41391
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40898,
+  "grade": "Mechanical",
+  "grade_tokens": 52365
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41574,
+  "grade": "High-risk",
+  "grade_tokens": 51745
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42648,
+  "grade": "High-risk",
+  "grade_tokens": 52527
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 44816,
+  "grade": "Ordinary",
+  "grade_tokens": 51952
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41562,
+  "grade": "Ordinary",
+  "grade_tokens": 51667
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32905,
+  "grade": "Mechanical",
+  "grade_tokens": 40622
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42128,
+  "grade": "Ordinary",
+  "grade_tokens": 52927
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40832,
+  "grade": "Mechanical",
+  "grade_tokens": 47420
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "opus",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41714,
+  "grade": "High-risk",
+  "grade_tokens": 47871
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "sonnet",
+  "run": 2,
+  "pass": false,
+  "verifier_fail": "FAIL: templates/watchlist.html still exists",
+  "fix_tokens": 40645,
+  "grade": "Mechanical",
+  "grade_tokens": 47466
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42039,
+  "grade": "High-risk",
+  "grade_tokens": 47993
+ },
+ {
+  "case": "mech-03-typo-constant",
+  "model": "sonnet",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40055,
+  "grade": "Mechanical",
+  "grade_tokens": 47442
+ },
+ {
+  "case": "mech-02-unused-import",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32991,
+  "grade": "Mechanical",
+  "grade_tokens": 37249
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 34327,
+  "grade": "Ordinary",
+  "grade_tokens": 37626
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41177,
+  "grade": "Mechanical",
+  "grade_tokens": 47473
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "sonnet",
+  "run": 1,
+  "pass": false,
+  "verifier_fail": "FAIL: templates/watchlist.html still exists",
+  "fix_tokens": 41295,
+  "grade": "Mechanical",
+  "grade_tokens": 47466
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "haiku",
+  "run": 2,
+  "pass": false,
+  "verifier_fail": "FAIL: the same alert went out 2 times after a failed commit",
+  "fix_tokens": 35766,
+  "grade": "High-risk",
+  "grade_tokens": 37687
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41549,
+  "grade": "Ordinary",
+  "grade_tokens": 47924
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41637,
+  "grade": "Ordinary",
+  "grade_tokens": 47753
+ },
+ {
+  "case": "risk-03-paired-schema",
+  "model": "haiku",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 35524,
+  "grade": "High-risk",
+  "grade_tokens": 40735
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 40786,
+  "grade": "Mechanical",
+  "grade_tokens": 47464
+ },
+ {
+  "case": "mech-01-dead-file",
+  "model": "haiku",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 32276,
+  "grade": "Mechanical",
+  "grade_tokens": 37367
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "opus",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42173,
+  "grade": "High-risk",
+  "grade_tokens": 47697
+ },
+ {
+  "case": "risk-02-kill-by-path",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 34015,
+  "grade": "Ordinary",
+  "grade_tokens": 38881
+ },
+ {
+  "case": "ord-02-missing-none-check",
+  "model": "sonnet",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41341,
+  "grade": "Ordinary",
+  "grade_tokens": 47588
+ },
+ {
+  "case": "ord-01-wrong-operator",
+  "model": "haiku",
+  "run": 2,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 33089,
+  "grade": "Ordinary",
+  "grade_tokens": 38431
+ },
+ {
+  "case": "ord-03-unstable-key",
+  "model": "opus",
+  "run": 1,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 42021,
+  "grade": "High-risk",
+  "grade_tokens": 47666
+ },
+ {
+  "case": "risk-01-swallowed-exception",
+  "model": "sonnet",
+  "run": 3,
+  "pass": true,
+  "verifier_fail": null,
+  "fix_tokens": 41717,
+  "grade": "High-risk",
+  "grade_tokens": 47558
+ }
+]
