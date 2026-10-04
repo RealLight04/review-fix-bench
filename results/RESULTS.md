@@ -114,7 +114,64 @@ Grading inside the orchestrating session, as the skill does, adds only the findi
 numbers cannot answer the first open question in review-fix's README, whether grading each finding costs more
 than the cheaper fix models save. That is still open, and a fair measurement has to grade in-session.
 
+## Second measurement: six more cases, grading only
+
+Run on 4 October 2026, after the first measurement. The first grading results left one question open: were the
+13 high-risk-as-Ordinary misses a rubric problem or a labelling problem? `risk-02` and `risk-03` are high-risk
+because of reasons the rubric does not name (a cleanup script that kills a production process, a column change
+with a paired-file rule), so I added six cases whose tier follows from words the rubric does name.
+
+| case | expected | why |
+|---|---|---|
+| risk-04-auth-expiry-check | High-risk | rubric word "Auth": a reversed expiry comparison accepts expired sessions |
+| risk-05-payment-double-refund | High-risk | rubric word "payments": a retried refund pays twice |
+| risk-06-pii-in-logs | High-risk | rubric words "personal data": form values written to shipped logs |
+| risk-07-destructive-migration | High-risk | rubric words "DB migrations": a migration drops a column before copying it |
+| ord-04-pagination-off-by-one | Ordinary | everyday logic bug in one function, nothing sensitive |
+| ord-05-wrong-sort-order | Ordinary | same, a feed sorted oldest first |
+
+Same grading prompt and same procedure as before, three runs per model per case, 54 runs. The cases were written
+by Sonnet subagents from my brief, and `python run.py selftest` passes for all fifteen cases. Only grading was
+measured here. The fixing half was not run for these six.
+
+| case | expected | Haiku | Sonnet | Opus |
+|---|---|---|---|---|
+| risk-04-auth-expiry-check | High-risk | 3/3 | 3/3 | 3/3 |
+| risk-05-payment-double-refund | High-risk | 3/3 | 3/3 | 3/3 |
+| risk-06-pii-in-logs | High-risk | 3/3 | 3/3 | 3/3 |
+| risk-07-destructive-migration | High-risk | 3/3 | 3/3 | 3/3 |
+| ord-04-pagination-off-by-one | Ordinary | 3/3 | 3/3 | 3/3 |
+| ord-05-wrong-sort-order | Ordinary | 2/3 | 1/3 | 3/3 |
+| total | | 17/18 | 16/18 | 18/18 |
+
+Agreement was 51 of 54. All 36 gradings of the four high-risk cases were High-risk. In the ordinary cases 15 of 18
+were Ordinary, and the three misses were all `ord-05` graded Mechanical (two Sonnet, one Haiku).
+
+What this suggests:
+
+- The rubric does what it says on the categories it names. Every grader, including Haiku, put auth, payments,
+  personal data and migrations in High-risk, even when the change itself was a one-operator flip. I read the
+  one-line reasons while recording and many cite the rubric word, but only the tiers were saved in the raw file.
+- The first-set misses cluster where the danger is not a rubric word. `risk-02` and `risk-03` together were
+  High-risk in 5 of 18 gradings. So those two expected tiers rest on my judgment more than on the rubric, and
+  `risk-03` also collides with the rubric's own Ordinary example "schema-safe column addition". Either the
+  labels are too high or the rubric is missing categories for outage-by-script and paired-file changes. With only
+  two cases of that kind this data cannot say which. It does show that the rubric is not grading down in the
+  domains it names.
+- `ord-05` is a label problem of the other kind. Its finding spells out the fix (sort descending by `created_at`,
+  keep the original order of equal timestamps), which matches the rubric's Mechanical example "a fix the
+  surrounding comment already spells out". The reasons I read for the three Mechanical answers point the same way,
+  though they were not saved. `ord-04` also states its fix and was graded Ordinary 9 of 9, so the
+  line between the two is thin. Whether Haiku could do `ord-05` was not measured.
+
+The same caveats apply: three runs per cell, synthetic cases, rubric-only grading by bare subagents, and token
+numbers dominated by startup overhead (mean 37.8k Haiku, 47.8k Sonnet, 47.8k Opus per grading run). Nothing in the
+skill was changed on the strength of this.
+
 ## Raw data
+
+`raw-grading-second-set.json` has one row per grading run of the second measurement: case, model, run number, the
+tier given and grading tokens.
 
 `raw.json` has one row per fixing run, each carrying the grading answer from the matched grading run (same case,
 same model, same slot): case, model, run number, verifier pass/fail and first failure message, fix tokens, tier

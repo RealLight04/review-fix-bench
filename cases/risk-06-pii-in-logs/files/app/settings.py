@@ -1,0 +1,3 @@
+"""가입 화면 설정."""
+MAX_NAME_LEN = 40
+SIGNUP_BONUS_POINTS = 500

@@ -1,0 +1,380 @@
+[
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "haiku",
+  "run": 1,
+  "grade": "Ordinary",
+  "grade_tokens": 37979
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "haiku",
+  "run": 2,
+  "grade": "Ordinary",
+  "grade_tokens": 38233
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "haiku",
+  "run": 3,
+  "grade": "Ordinary",
+  "grade_tokens": 37868
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "opus",
+  "run": 1,
+  "grade": "Ordinary",
+  "grade_tokens": 47777
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "opus",
+  "run": 2,
+  "grade": "Ordinary",
+  "grade_tokens": 47761
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "opus",
+  "run": 3,
+  "grade": "Ordinary",
+  "grade_tokens": 47804
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "Ordinary",
+  "grade_tokens": 47700
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "Ordinary",
+  "grade_tokens": 47698
+ },
+ {
+  "case": "ord-04-pagination-off-by-one",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "Ordinary",
+  "grade_tokens": 47706
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "haiku",
+  "run": 1,
+  "grade": "Mechanical",
+  "grade_tokens": 37746
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "haiku",
+  "run": 2,
+  "grade": "Ordinary",
+  "grade_tokens": 37655
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "haiku",
+  "run": 3,
+  "grade": "Ordinary",
+  "grade_tokens": 37567
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "opus",
+  "run": 1,
+  "grade": "Ordinary",
+  "grade_tokens": 47831
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "opus",
+  "run": 2,
+  "grade": "Ordinary",
+  "grade_tokens": 47830
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "opus",
+  "run": 3,
+  "grade": "Ordinary",
+  "grade_tokens": 47819
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "Ordinary",
+  "grade_tokens": 47691
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "Mechanical",
+  "grade_tokens": 47658
+ },
+ {
+  "case": "ord-05-wrong-sort-order",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "Mechanical",
+  "grade_tokens": 47669
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "haiku",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 37805
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "haiku",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 37752
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "haiku",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 37723
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "opus",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47778
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "opus",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47771
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "opus",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47788
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47878
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47896
+ },
+ {
+  "case": "risk-04-auth-expiry-check",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47866
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "haiku",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 37706
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "haiku",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 37752
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "haiku",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 37745
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "opus",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47762
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "opus",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47767
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "opus",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47772
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47784
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47794
+ },
+ {
+  "case": "risk-05-payment-double-refund",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47798
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "haiku",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 37745
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "haiku",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 37629
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "haiku",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 37757
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "opus",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47707
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "opus",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47715
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "opus",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47668
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47728
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47779
+ },
+ {
+  "case": "risk-06-pii-in-logs",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47760
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "haiku",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 37891
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "haiku",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 37611
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "haiku",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 37417
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "opus",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47713
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "opus",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47699
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "opus",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47694
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "sonnet",
+  "run": 1,
+  "grade": "High-risk",
+  "grade_tokens": 47721
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "sonnet",
+  "run": 2,
+  "grade": "High-risk",
+  "grade_tokens": 47710
+ },
+ {
+  "case": "risk-07-destructive-migration",
+  "model": "sonnet",
+  "run": 3,
+  "grade": "High-risk",
+  "grade_tokens": 47710
+ }
+]

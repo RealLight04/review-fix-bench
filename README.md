@@ -1,6 +1,6 @@
 # review-fix-bench
 
-Nine small cases for [review-fix](https://github.com/RealLight04/review-fix-skill), a Claude Code skill
+Fifteen small cases for [review-fix](https://github.com/RealLight04/review-fix-skill), a Claude Code skill
 that grades code review findings by risk and hands each fix to a model tier. Each case is a finding with a
 known correct fix. They exist to test two things review-fix's README claims but has not measured:
 
@@ -13,11 +13,15 @@ It does **not** measure token cost properly, neither the grading overhead nor th
 models. Read those off `/cost` or your usage page for each run and write them into your results. The runner
 does not collect them.
 
-A first measurement (81 fixing runs and 81 grading runs) is in [results/RESULTS.md](results/RESULTS.md), with
-the per-run data in [results/raw.json](results/raw.json). In short: every mechanical and ordinary fix passed
-except two Sonnet runs that left a file undeleted (the harness denied the delete in one, and the other reported success anyway), Haiku failed the one high-risk case
-that every grader sent to Opus, and graders matched the expected tier in 58 of 81 runs. Thirteen of the 23
-misses rated a high-risk case Ordinary.
+Two measurements are in [results/RESULTS.md](results/RESULTS.md), with the per-run data next to it: a first
+one (81 fixing runs and 81 grading runs on nine cases) and a second grading-only one on six added cases (54 runs).
+In the first one, every mechanical and ordinary fix passed except two Sonnet runs that left a file undeleted (the
+harness denied the delete in one, and the other reported success anyway), Haiku failed the one high-risk case
+that every grader sent to Opus, and graders matched the expected tier in 58 of 81 runs. All 13 high-risk cases
+rated Ordinary were on two cases, `risk-02` and `risk-03`, whose danger is not a word the rubric names. The second
+one gave the rubric four cases whose danger is a rubric word (auth, payments, personal data, migrations) and it
+graded all 36 runs High-risk. With only two cases of the first kind, this cannot separate case-specific labels
+from a general gap, so whether those two labels are too high or the rubric lacks a category for them is still open.
 
 ## Why this is a separate repository
 
@@ -90,6 +94,15 @@ A results table can be as simple as:
 | `risk-01-swallowed-exception` | An alert goes out before the commit that records it |
 | `risk-02-kill-by-path` | Test cleanup kills the production server on another port |
 | `risk-03-paired-schema` | A column change that `CLAUDE.md` says must touch two files |
+| `risk-04-auth-expiry-check` | A session expiry comparison the wrong way round |
+| `risk-05-payment-double-refund` | A retried refund pays the customer twice |
+| `risk-06-pii-in-logs` | Form values with personal data written to the logs |
+| `risk-07-destructive-migration` | A migration drops a column before copying its data |
+| `ord-04-pagination-off-by-one` | The last page of a list cannot be reached |
+| `ord-05-wrong-sort-order` | A feed shows the oldest posts instead of the newest |
+
+The first nine were used for the first measurement. The last six were added afterwards to separate rubric
+problems from labelling problems, and only their grading has been measured.
 
 ## How the verifiers judge
 
